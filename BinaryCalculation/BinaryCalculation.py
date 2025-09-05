@@ -94,6 +94,7 @@ def ripple_subtract_binary(a: str, b: str) -> str:
     
     return ''.join(a).lstrip('0') or '0'
 
+# Test cases for logic gates
 def test_logic_gates():
     assert xorGate('0', '0') == '0'
     assert andGate('1', '1') == '1'
@@ -103,6 +104,7 @@ def test_logic_gates():
     assert shiftRight('1101', 2) == '0011'
     print("All logic gate tests passed.")
 
+# Test cases for conversions
 def test_conversions():
     assert decimal_to_binary(4) == '100' #Will give error if '0100'
     assert decimal_to_binary(-1) == '-1'
@@ -110,6 +112,7 @@ def test_conversions():
     assert binary_to_decimal('-1111') == '-15'
     print("All conversion tests passed.")
 
+# Test cases for binary subtraction
 def test_binary_subtraction():
     assert ripple_subtract_binary('1101', '101') == '1000'
     assert ripple_subtract_binary('1000', '1') == '111'
@@ -118,6 +121,7 @@ def test_binary_subtraction():
 
     print("All binary subtraction tests passed.")
 
+# Main function to run tests
 if __name__ == "__main__":
     test_logic_gates()
     test_conversions()
